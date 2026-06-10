@@ -22,8 +22,8 @@ steps:
   displayName: Deploy to AKS
   inputs:
     action: deploy
-    kubernetesServiceConnection: 'YOUR-AKS-SERVICE-CONNECTION'
-    namespace: default
+    kubernetesServiceConnection: 'aks-devops-demo-connection'
+    namespace: 'default'
     manifests: |
       deployment.yaml
       service.yaml
